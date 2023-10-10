@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right,#000aaf ,green);
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+
+}
+.screen{
+  background: rgb(57, 57, 57,.75);
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.screen .previous{
+  color:rgb(255, 255, 255,.65);
+  font-size: 1.5rem;
+}
+.screen .current{
+  color:rgb(255, 255, 255);
+  font-size: 2.5rem;
+}
+.buttons{
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4,6rem);
+  grid-template-rows: minmax(7rem ,auto) repeat(5,6rem);
+
+
+}
+.span_two_ac{
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+.span_two_eq{
+  grid-column-start: 3;
+  grid-column-end: 5;
+
+}
+button{
+  border: 1px white solid;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  background: rgb(255, 255, 255,0.75);
+}
+button:hover,
+button:focus{
+  background: rgb(255, 255, 255,0.9);
+}
